@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Suite" parallel="classes">
+  <test thread-count="4" name="Test" parallel="classes">
+  
+  <parameter name="browser" value="chrome"/>
+  <parameter name="version" value="91.0"/>
+  <parameter name="platform" value="WIN10"/>
+    <classes>
+      <class name="lamdatest.test"/>
+      <class name="lamdatest.test1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
